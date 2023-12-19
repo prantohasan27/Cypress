@@ -1,18 +1,18 @@
 describe('Alerts in Cypress', function(){
 
-    // it('JS Alert', function(){
+    it('JS Alert', function(){
     
-    //      cy.visit('https://the-internet.herokuapp.com/javascript_alerts')
-    //      cy.get(".example > ul:nth-child(3) > li:nth-child(1) > button:nth-child(1)").click()
-    //      cy.on('window:alert', function(p){
-    //      expect(p).to.contains('I am a JS Alert')
+         cy.visit('https://the-internet.herokuapp.com/javascript_alerts')
+         cy.get(".example > ul:nth-child(3) > li:nth-child(1) > button:nth-child(1)").click()
+         cy.on('window:alert', function(p){
+         expect(p).to.contains('I am a JS Alert')
 
-    //      })
+         })
 
-    //      cy.get("#result").should('have.text','You successfully clicked an alert')
+         cy.get("#result").should('have.text','You successfully clicked an alert')
 
 
-    // })
+    })
 
     // it('JS Confirm Alert', function(){
     
